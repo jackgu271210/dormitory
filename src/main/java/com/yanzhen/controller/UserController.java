@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     private UserService userService;
     
-    @GetMapping（"create"）
+    @GetMapping("create")
     public void create() {
         User user = new User();
         user.setUserName("admin");
