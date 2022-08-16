@@ -42,6 +42,16 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.4.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.4.1.Final</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -57,7 +67,7 @@
                 </includes>
             </resource>
             <resource>
-                <directory>src/main.resources</directory>
+                <directory>src/main/resources</directory>
                 <includes>
                     <include>**/*.yml</include>
                     <include>**/*.xml</include>

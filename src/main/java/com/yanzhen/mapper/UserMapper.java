@@ -1,18 +1,24 @@
 package com.yanzhen.mapper;
 
+import java.util.List;
+import java.util.Map;
+
 import com.yanzhen.entity.User;
 
-import java.util.List;
-
 public interface UserMapper {
-    
-    int create(User user);
-    
-    int delete(Integer id);
-    
-    int update(User user);
-    
-    List<User> query(User user);
-    
-    User detail(User user);
+
+	public int create(User user);
+
+	public int delete(Integer id);
+
+	public int update(User user);
+
+	public int updateSelective(User user);
+
+	public List<User> query(User user);
+
+	public User detail(Integer id);
+
+	public int count(User user);
+
 }
